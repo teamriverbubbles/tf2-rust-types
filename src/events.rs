@@ -137,52 +137,52 @@ pub struct conga_kill {
 }
 
 #[repr(C)]
-pub struct controlpoi32_endtouch {
+pub struct controlpoint_endtouch {
     pub player: i32,
     pub area: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_fake_capture_mult {
+pub struct controlpoint_fake_capture_mult {
     pub player: i32,
     pub i32_data: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_pulse_element {
+pub struct controlpoint_pulse_element {
     pub player: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32tarttouch {
+pub struct controlpointtarttouch {
     pub player: i32,
     pub area: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_timer_updated_s {
+pub struct controlpoint_timer_updated_s {
     pub entindex: i32,
     pub time: f32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_unlock_updated_s {
+pub struct controlpoint_unlock_updated_s {
     pub index: i32,
     pub time: f32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_updatecapping_s {
+pub struct controlpoint_updatecapping_s {
     pub index: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_updateimages_s {
+pub struct controlpoint_updateimages_s {
     pub index: i32,
 }
 
 #[repr(C)]
-pub struct controlpoi32_updateowner_s {
+pub struct controlpoint_updateowner_s {
     pub index: i32,
 }
 
