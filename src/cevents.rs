@@ -184,6 +184,11 @@ pub struct controlpoint_updateimages_s {
 }
 
 #[repr(C)]
+pub struct controlpoint_updatelayout_s {
+    pub index: c_short,
+}
+
+#[repr(C)]
 pub struct controlpoint_updateowner_s {
     pub index: c_short,
 }
