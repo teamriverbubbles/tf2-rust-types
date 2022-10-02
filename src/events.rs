@@ -160,57 +160,57 @@ pub struct controlpointtarttouch {
 }
 
 
-pub struct controlpoint_timer_updated_s {
+pub struct controlpoint_timer_updated {
     pub entindex: i32,
     pub time: f32,
 }
 
 
-pub struct controlpoint_unlock_updated_s {
+pub struct controlpoint_unlock_updated {
     pub index: i32,
     pub time: f32,
 }
 
 
-pub struct controlpoint_updatecapping_s {
+pub struct controlpoint_updatecapping {
     pub index: i32,
 }
 
 
-pub struct controlpoint_updateimages_s {
+pub struct controlpoint_updateimages {
     pub index: i32,
 }
 
 
-pub struct controlpoint_updatelayout_s {
+pub struct controlpoint_updatelayout {
     pub index: i32,
 }
 
 
-pub struct controlpoint_updateowner_s {
+pub struct controlpoint_updateowner {
     pub index: i32,
 }
 
 
-pub struct cross_spectral_bridge_s {
+pub struct cross_spectral_bridge {
     pub player: i32,
 }
 
 
-pub struct crossbow_heal_s {
+pub struct crossbow_heal {
     pub healer: i32,
     pub target: i32,
     pub amount: i32,
 }
 
 
-pub struct ctf_flag_captured_s {
+pub struct ctf_flag_captured {
     pub capping_team: i32,
     pub capping_team_score	: i32,
 }
 
 
-pub struct damage_mitigated_s {
+pub struct damage_mitigated {
     pub mitigator: i32,
     pub damaged: i32,
     pub amount: i32,
@@ -218,7 +218,7 @@ pub struct damage_mitigated_s {
 }
 
 
-pub struct damage_prevented_s {
+pub struct damage_prevented {
     pub preventor: i32,
     pub victim: i32,
     pub amount: i32,
@@ -226,28 +226,28 @@ pub struct damage_prevented_s {
 }
 
 
-pub struct damage_resisted_s {
+pub struct damage_resisted {
     pub entindex: i32,
 }
 
 
-pub struct demoman_det_stickies_s {
+pub struct demoman_det_stickies {
     pub player: i32,
 }
 
 
-pub struct deploy_buff_banner_s {
+pub struct deploy_buff_banner {
     pub buff_type: i32,
     pub buff_owner: i32,
 }
 
 
-pub struct doomsday_rocket_open_s {
+pub struct doomsday_rocket_open {
     pub team: i32,
 }
 
 
-pub struct duel_status_s {
+pub struct duel_status {
     pub killer: i32,
     pub score_type: i32,
     pub initiator: i32,
@@ -257,72 +257,72 @@ pub struct duel_status_s {
 }
 
 
-pub struct environmental_death_s {
+pub struct environmental_death {
     pub killer: i32,
     pub victim: i32,
 }
 
 
-pub struct escaped_hell_s {
+pub struct escaped_hell {
     pub player: i32,
 }
 
 
-pub struct escaped_loot_island_s {
+pub struct escaped_loot_island {
     pub player: i32,
 }
 
 
-pub struct escort_progress_s {
+pub struct escort_progress {
     pub team: i32,
     pub progress: f32,
     pub reset: bool,
 }
 
 
-pub struct escort_recede_s {
+pub struct escort_recede {
     pub team: i32,
     pub recedetime: f32,
 }
 
 
-pub struct escort_speed_s {
+pub struct escort_speed {
     pub team: i32,
     pub speed: String,
     pub players: i32,
 }
 
 
-pub struct eyeball_boss_escape_imminent_s {
+pub struct eyeball_boss_escape_imminent {
     pub level: i32,
     pub time_remaining: String,
 }
 
 
-pub struct eyeball_boss_escaped_s {
+pub struct eyeball_boss_escaped {
     pub level: i32,
 
 }
 
 
-pub struct eyeball_boss_killed_s {
+pub struct eyeball_boss_killed {
     pub level: i32,
 }
 
 
-pub struct eyeball_boss_killer_s {
-    pub level: i32,
-    pub player_entindex: i32,
-}
-
-
-pub struct eyeball_boss_stunned_s {
+pub struct eyeball_boss_killer {
     pub level: i32,
     pub player_entindex: i32,
 }
 
 
-pub struct fish_notice_s {
+pub struct eyeball_boss_stunned {
+    pub level: i32,
+    pub player_entindex: i32,
+}
+
+
+pub struct fish_notice {
     pub userid: i32,
     pub victim_entindex: i32,
     pub inflictor_entindex: i32,
@@ -340,63 +340,63 @@ pub struct fish_notice_s {
 }
 
 
-pub struct flagstatus_update_s {
+pub struct flagstatus_update {
     pub userid: i32,
     pub entindex: i32,
 }
 
 
-pub struct gas_doused_player_ignited_s {
+pub struct gas_doused_player_ignited {
     pub igniter: i32,
     pub douser: i32,
     pub victim: i32,
 }
 
 
-pub struct halloween_boss_killed_s {
+pub struct halloween_boss_killed {
     pub boss: i32,
     pub killer: i32,
 }
 
 
-pub struct halloween_duck_collected_s {
+pub struct halloween_duck_collected {
     pub collector: i32,
 }
 
 
-pub struct halloween_pumpkin_grab_s {
+pub struct halloween_pumpkin_grab {
     pub userid: i32,
 }
 
 
-pub struct halloween_skeleton_killed_s {
+pub struct halloween_skeleton_killed {
     pub player: i32,
 }
 
 
-pub struct halloween_soul_collected_s {
+pub struct halloween_soul_collected {
     pub i32ended_target: i32,
     pub collecting_player: i32,
     pub soul_count: i32,
 }
 
 
-pub struct hide_annotation_s {
+pub struct hide_annotation {
     pub id: i32,
 }
 
 
-pub struct i32ro_finish_s {
+pub struct i32ro_finish {
     pub player: i32,
 }
 
 
-pub struct i32ro_nextcamera_s {
+pub struct i32ro_nextcamera {
     pub player: i32,
 }
 
 
-pub struct item_found_s {
+pub struct item_found {
     pub player: i32,
     pub quality: i32,
     pub method: i32,
@@ -407,24 +407,24 @@ pub struct item_found_s {
 }
 
 
-pub struct item_pickup_s {
+pub struct item_pickup {
     pub userid: i32,
     pub item: String,
 }
 
 
-pub struct kill_in_hell_s {
+pub struct kill_in_hell {
     pub killer: i32,
     pub victim: i32,
 }
 
 
-pub struct kill_refills_meter_s {
+pub struct kill_refills_meter {
     pub index: i32,
 }
 
 
-pub struct killed_capping_player_s {
+pub struct killed_capping_player {
     pub cp: i32,
     pub killer: i32,
     pub victim: i32,
@@ -432,27 +432,27 @@ pub struct killed_capping_player_s {
 }
 
 
-pub struct landed_s {
+pub struct landed {
     pub player: i32,
 }
 
 
-pub struct localplayer_changedisguise_s {
+pub struct localplayer_changedisguise {
     pub disguised: bool,
 }
 
 
-pub struct localplayer_healed_s {
+pub struct localplayer_healed {
     pub amount: i32,
 }
 
 
-pub struct localplayer_score_changed_s {
+pub struct localplayer_score_changed {
     pub score: i32,
 }
 
 
-pub struct medic_death_s {
+pub struct medic_death {
     pub userid: i32,
     pub attacker: i32,
     pub healing: i32,
@@ -460,110 +460,110 @@ pub struct medic_death_s {
 }
 
 
-pub struct medigun_shield_blocked_damage_s {
+pub struct medigun_shield_blocked_damage {
     pub userid: i32,
     pub damage: f32,
 }
 
 
-pub struct merasmus_escape_warning_s {
+pub struct merasmus_escape_warning {
     pub level: i32,
     pub time_remaining: String,
 }
 
 
-pub struct merasmus_escaped_s {
+pub struct merasmus_escaped {
     pub level: i32,
 }
 
 
-pub struct merasmus_prop_found_s {
+pub struct merasmus_prop_found {
     pub player: i32,
 }
 
 
-pub struct merasmus_stunned_s {
+pub struct merasmus_stunned {
     pub player: i32,
 }
 
 
-pub struct minigame_win_s {
+pub struct minigame_win {
     pub team: i32,
     pub types: i32,
 }
 
 
-pub struct minigame_won_s {
+pub struct minigame_won {
     pub player: i32,
     pub game: i32,
 }
 
 
-pub struct mvm_adv_wave_complete_no_gates_s {
+pub struct mvm_adv_wave_complete_no_gates {
     pub index: i32,
 }
 
 
-pub struct mvm_begin_wave_s {
+pub struct mvm_begin_wave {
     pub wave_index: i32,
     pub max_waves: i32,
     pub advanced: i32,
 }
 
 
-pub struct mvm_bomb_carrier_killed_s {
+pub struct mvm_bomb_carrier_killed {
     pub level: i32,
 }
 
 
-pub struct mvm_bomb_deploy_reset_by_player_s {
+pub struct mvm_bomb_deploy_reset_by_player {
     pub player: i32,
 }
 
 
-pub struct mvm_bomb_reset_by_player_s {
+pub struct mvm_bomb_reset_by_player {
     pub player: i32,
 }
 
 
-pub struct mvm_kill_robot_delivering_bomb_s {
+pub struct mvm_kill_robot_delivering_bomb {
     pub player: i32,
 }
 
 
-pub struct mvm_medic_powerup_shared_s {
+pub struct mvm_medic_powerup_shared {
     pub player: i32,
 }
 
 
-pub struct mvm_mission_complete_s {
+pub struct mvm_mission_complete {
     pub mission: String,
 }
 
 
-pub struct mvm_mission_update_s {
+pub struct mvm_mission_update {
     pub class	: i32,
     pub count: i32,
 }
 
 
-pub struct mvm_pickup_currency_s {
+pub struct mvm_pickup_currency {
     pub player: i32,
     pub currency: i32,
 }
 
 
-pub struct mvm_quick_sentry_upgrade_s {
+pub struct mvm_quick_sentry_upgrade {
     pub player: i32,
 }
 
 
-pub struct mvm_scout_marked_for_death_s {
+pub struct mvm_scout_marked_for_death {
     pub player: i32,
 }
 
 
-pub struct mvm_sentrybuster_detonate_s {
+pub struct mvm_sentrybuster_detonate {
     pub player: i32,
     pub det_x: f32,
     pub det_y: f32,
@@ -571,35 +571,35 @@ pub struct mvm_sentrybuster_detonate_s {
 }
 
 
-pub struct mvm_sentrybuster_killed_s {
+pub struct mvm_sentrybuster_killed {
     pub sentry_buster: i32,
 }
 
 
-pub struct mvm_sniper_headshot_currency_s {
+pub struct mvm_sniper_headshot_currency {
     pub userid: i32,
     pub currency: i32,
 }
 
 
-pub struct mvm_wave_complete_s {
+pub struct mvm_wave_complete {
     pub advanced: bool,
 }
 
 
-pub struct nav_blocked_s {
+pub struct nav_blocked {
     pub area: i32,
     pub blocked: bool,
 }
 
 
-pub struct num_cappers_changed_s {
+pub struct num_cappers_changed {
     pub index: i32,
     pub count: i32,
 }
 
 
-pub struct object_deflected_s {
+pub struct object_deflected {
     pub userid: i32,
     pub ownerid: i32,
     pub weaponid: i32,
@@ -607,7 +607,7 @@ pub struct object_deflected_s {
 }
 
 
-pub struct object_destroyed_s {
+pub struct object_destroyed {
     pub userid: i32,
     pub attacker: i32,
     pub assister: i32,
@@ -619,71 +619,71 @@ pub struct object_destroyed_s {
 }
 
 
-pub struct object_detonated_s {
+pub struct object_detonated {
     pub userid: i32,
     pub objecttype: i32,
     pub index: i32,
 }
 
 
-pub struct object_removed_s {
+pub struct object_removed {
     pub userid: i32,
     pub objecttype: i32,
     pub index: i32,
 }
 
 
-pub struct parachute_deploy_s {
+pub struct parachute_deploy {
     pub index: i32,
 }
 
 
-pub struct parachute_holster_s {
+pub struct parachute_holster {
     pub index: i32,
 }
 
 
-pub struct party_chat_s {
+pub struct party_chat {
     pub steamid: String,
     pub text: String,
     pub types: i32,
 }
 
 
-pub struct party_member_join_s {
+pub struct party_member_join {
     pub steamid: String,
 }
 
 
-pub struct party_member_leave_s {
+pub struct party_member_leave {
     pub steamid: String,
 }
 
 
-pub struct pass_ball_blocked_s {
+pub struct pass_ball_blocked {
     pub owner: i32,
     pub blocker: i32,
 }
 
 
-pub struct pass_ball_stolen_s {
+pub struct pass_ball_stolen {
     pub victim: i32,
     pub attacker: i32,
 }
 
 
-pub struct pass_free_s {
+pub struct pass_free {
     pub owner: i32,
     pub attacker: i32,
 }
 
 
-pub struct pass_get_s {
+pub struct pass_get {
     pub owner: i32,
 }
 
 
-pub struct pass_pass_caught_s {
+pub struct pass_pass_caught {
     pub passer: i32,
     pub catcher: i32,
     pub dist: f32,
@@ -691,109 +691,109 @@ pub struct pass_pass_caught_s {
 }
 
 
-pub struct pass_score_s {
+pub struct pass_score {
     pub scorer: i32,
     pub assister: i32,
     pub poi32s: i32,
 }
 
 
-pub struct path_track_passed_s {
+pub struct path_track_passed {
     pub index: i32,
 }
 
 
-pub struct payload_pushed_s {
+pub struct payload_pushed {
     pub pusher: i32,
     pub distance: String,
 }
 
 
-pub struct player_abandoned_match_s {
+pub struct player_abandoned_match {
     pub game_over: bool,
 }
 
 
-pub struct player_account_changed_s {
+pub struct player_account_changed {
     pub old_value: i32,
     pub new_value: i32,
 }
 
 
-pub struct player_askedforball_s {
+pub struct player_askedforball {
     pub userid: i32,
 }
 
 
-pub struct player_bonuspoi32s_s {
+pub struct player_bonuspoi32s {
     pub poi32s: i32,
     pub player_entindex: i32,
     pub source_entindex	: i32,
 }
 
 
-pub struct player_buff_s {
+pub struct player_buff {
     pub userid: i32,
     pub buff_owner: i32,
     pub buff_type: i32,
 }
 
 
-pub struct player_builtobject_s {
+pub struct player_builtobject {
     pub userid: i32,
     pub object: i32,
     pub index: i32,
 }
 
 
-pub struct player_buyback_s {
+pub struct player_buyback {
     pub player: i32,
     pub cost: i32,
 }
 
 
-pub struct player_calledformedic_s {
+pub struct player_calledformedic {
     pub userid	: i32,
 }
 
 
-pub struct player_carryobject_s {
+pub struct player_carryobject {
     pub userid: i32,
     pub object: i32,
     pub index: i32,
 }
 
 
-pub struct player_changeclass_s {
+pub struct player_changeclass {
     pub userid: i32,
     pub class: i32,
 }
 
 
-pub struct player_chargedeployed_s {
+pub struct player_chargedeployed {
     pub userid: i32,
     pub targetid: i32,
 }
 
 
-pub struct player_currency_changed_s {
+pub struct player_currency_changed {
     pub currency: i32,
 }
 
 
-pub struct player_damage_dodged_s {
+pub struct player_damage_dodged {
     pub damage: i32,
 }
 
 
-pub struct player_damaged_s {
+pub struct player_damaged {
     pub amount: i32,
     pub types: i32,
 
 }
 
 
-pub struct player_death_s {
+pub struct player_death {
     pub userid: i32,
     pub victim_entindex: i32,
     pub inflictor_entindex: i32,
@@ -824,79 +824,79 @@ pub struct player_death_s {
 }
 
 
-pub struct player_destroyed_pipebomb_s {
+pub struct player_destroyed_pipebomb {
     pub userid: i32,
 }
 
 
-pub struct player_directhit_stun_s {
+pub struct player_directhit_stun {
     pub attacker: i32,
     pub victim: i32,
 }
 
 
-pub struct player_domination_s {
+pub struct player_domination {
     pub dominator: i32,
     pub dominated: i32,
     pub dominations: i32,
 }
 
 
-pub struct player_dropobject_s {
+pub struct player_dropobject {
     pub userid: i32,
     pub object: i32,
     pub index: i32,
 }
 
 
-pub struct player_escort_score_s {
+pub struct player_escort_score {
     pub player: i32,
     pub poi32s: i32,
 }
 
 
-pub struct player_extinguished_s {
+pub struct player_extinguished {
     pub victim: i32,
     pub healer: i32,
     pub itemdefindex: i32,
 }
 
 
-pub struct player_healed_s {
+pub struct player_healed {
     pub patient: i32,
     pub healer	: i32,
     pub amount: i32,
 }
 
 
-pub struct player_healedbymedic_s {
+pub struct player_healedbymedic {
     pub medic: i32,
 }
 
 
-pub struct player_healedmediccall_s {
+pub struct player_healedmediccall {
     pub userid: i32,
 }
 
 
-pub struct player_healonhit_s {
+pub struct player_healonhit {
     pub amount: i32,
     pub entindex: i32,
 }
 
 
-pub struct player_highfive_cancel_s {
+pub struct player_highfive_cancel {
     pub entindex: i32,
 }
 
 
-pub struct player_highfive_success_s {
+pub struct player_highfive_success {
     pub initiator_entindex: i32,
     pub partner_entindex	: i32,
 }
 
 
-pub struct player_hurt_s {
+pub struct player_hurt {
     pub userid: i32,
     pub health: i32,
     pub attacker: i32,
@@ -911,73 +911,73 @@ pub struct player_hurt_s {
 }
 
 
-pub struct player_ignited_inv_s {
+pub struct player_ignited_inv {
     pub pyro_entindex: i32,
     pub victim_entindex: i32,
     pub medic_entindex: i32,
 }
 
 
-pub struct player_ignited_s {
+pub struct player_ignited {
     pub pyro_entindex: i32,
     pub victim_entindex: i32,
     pub weaponid: i32,
 }
 
 
-pub struct player_initial_spawn_s {
+pub struct player_initial_spawn {
     pub index: i32,
 }
 
 
-pub struct player_invulned_s {
+pub struct player_invulned {
     pub userid: i32,
     pub medic_userid: i32,
 }
 
 
-pub struct player_jarated_fade_s {
+pub struct player_jarated_fade {
     pub thrower_entindex: i32,
     pub victim_entindex: i32,
 }
 
 
-pub struct player_jarated_s {
+pub struct player_jarated {
     pub thrower_entindex: i32,
     pub victim_entindex: i32,
 }
 
 
-pub struct player_killed_achievement_zone_s {
+pub struct player_killed_achievement_zone {
     pub attacker: i32,
     pub victim: i32,
     pub zone_id: i32,
 }
 
 
-pub struct player_mvp_s {
+pub struct player_mvp {
     pub player: i32,
 }
 
 
-pub struct player_next_map_vote_change_s {
+pub struct player_next_map_vote_change {
     pub map_index: i32,
     pub vote: i32,
 }
 
 
-pub struct player_pinned_s {
+pub struct player_pinned {
     pub pinned: i32,
 }
 
 
-pub struct player_rocketpack_pushed_s {
+pub struct player_rocketpack_pushed {
     pub pusher: i32,
     pub pushed: i32,
 }
 
 
-pub struct player_sapped_object_s {
+pub struct player_sapped_object {
     pub userid: i32,
     pub ownerid: i32,
     pub object: i32,
@@ -985,37 +985,37 @@ pub struct player_sapped_object_s {
 }
 
 
-pub struct player_score_changed_s {
+pub struct player_score_changed {
     pub player: i32,
     pub delta: i32,
 }
 
 
-pub struct player_shield_blocked_s {
+pub struct player_shield_blocked {
     pub attacker_entindex: i32,
     pub blocker_entindex: i32,
 }
 
 
-pub struct player_spawn_s {
+pub struct player_spawn {
     pub userid: i32,
     pub team: i32,
     pub class: i32,
 }
 
 
-pub struct player_stats_updated_s {
+pub struct player_stats_updated {
     pub forceupload: bool,
 }
 
 
-pub struct player_stealsandvich_s {
+pub struct player_stealsandvich {
     pub owner: i32,
     pub target: i32,
 }
 
 
-pub struct player_stunned_s {
+pub struct player_stunned {
     pub stunner: i32,
     pub victim: i32,
     pub victim_capping	: bool,
@@ -1023,19 +1023,19 @@ pub struct player_stunned_s {
 }
 
 
-pub struct player_teleported_s {
+pub struct player_teleported {
     pub userid: i32,
     pub builderid: i32,
     pub dist: f32,
 }
 
 
-pub struct player_turned_to_ghost_s {
+pub struct player_turned_to_ghost {
     pub userid: i32,
 }
 
 
-pub struct player_upgradedobject_s {
+pub struct player_upgradedobject {
     pub userid: i32,
     pub object: i32,
     pub index: i32,
@@ -1043,26 +1043,26 @@ pub struct player_upgradedobject_s {
 }
 
 
-pub struct player_used_powerup_bottle_s {
+pub struct player_used_powerup_bottle {
     pub player: i32,
     pub types: i32,
     pub time: f32,
 }
 
 
-pub struct post_inventory_application_s {
+pub struct post_inventory_application {
     pub userid: i32,
 }
 
 
-pub struct projectile_direct_hit_s {
+pub struct projectile_direct_hit {
     pub attacker: i32,
     pub victim: i32,
     pub weapon_def_index: i32,
 }
 
 
-pub struct projectile_removed_s {
+pub struct projectile_removed {
     pub attacker: i32,
     pub weapon_def_index: i32,
     pub num_hit: i32,
@@ -1070,7 +1070,7 @@ pub struct projectile_removed_s {
 }
 
 
-pub struct proto_def_changed_s {
+pub struct proto_def_changed {
     pub types: i32,
     pub defindex: i32,
     pub created: bool,
@@ -1079,14 +1079,14 @@ pub struct proto_def_changed_s {
 }
 
 
-pub struct pve_win_panel_s {
+pub struct pve_win_panel {
     pub panel_style: i32,
     pub winning_team: i32,
     pub winreason: String,
 }
 
 
-pub struct quest_objective_completed_s {
+pub struct quest_objective_completed {
     pub quest_item_id_low: i32,
     pub quest_item_id_hi: i32,
     pub quest_objective_id: i32,
@@ -1094,7 +1094,7 @@ pub struct quest_objective_completed_s {
 }
 
 
-pub struct quest_progress_s {
+pub struct quest_progress {
     pub owner: i32,
     pub scorer: i32,
     pub types: i32,
@@ -1103,25 +1103,25 @@ pub struct quest_progress_s {
 }
 
 
-pub struct quest_request_s {
+pub struct quest_request {
     pub request: i32,
     pub msg: String,
 }
 
 
-pub struct quest_response_s {
+pub struct quest_response {
     pub request: i32,
     pub success: bool,
     pub msg: String,
 }
 
 
-pub struct quest_turn_in_state_s {
+pub struct quest_turn_in_state {
     pub state: i32,
 }
 
 
-pub struct rd_robot_impact_s {
+pub struct rd_robot_impact {
     pub entindex: i32,
     pub impulse_x: f32,
     pub impulse_y: f32,
@@ -1129,7 +1129,7 @@ pub struct rd_robot_impact_s {
 }
 
 
-pub struct rd_robot_killed_s {
+pub struct rd_robot_killed {
     pub userid: i32,
     pub victim_entindex: i32,
     pub inflictor_entindex: i32,
@@ -1142,73 +1142,73 @@ pub struct rd_robot_killed_s {
 }
 
 
-pub struct rd_team_poi32s_changed_s {
+pub struct rd_team_poi32s_changed {
     pub poi32s: i32,
     pub team: i32,
     pub method: i32,
 }
 
 
-pub struct rematch_vote_period_over_s {
+pub struct rematch_vote_period_over {
     pub success: bool,
 }
 
 
-pub struct remove_nemesis_relationships_s {
+pub struct remove_nemesis_relationships {
     pub player: i32,
 }
 
 
-pub struct respawn_ghost_s {
+pub struct respawn_ghost {
     pub reviver: i32,
     pub ghost: i32,
 }
 
 
-pub struct restart_timer_time_s {
+pub struct restart_timer_time {
     pub time: String,
 }
 
 
-pub struct revive_player_complete_s {
+pub struct revive_player_complete {
     pub entindex: i32,
 }
 
 
-pub struct revive_player_notify_s {
+pub struct revive_player_notify {
     pub entindex: i32,
     pub marker_entindex: i32,
 }
 
 
-pub struct revive_player_stopped_s {
+pub struct revive_player_stopped {
     pub entindex: i32,
 }
 
 
-pub struct rocket_jump_landed_s {
+pub struct rocket_jump_landed {
     pub userid: i32,
 }
 
 
-pub struct rocket_jump_s {
-    pub userid: i32,
-    pub playsound: bool,
-}
-
-
-pub struct rocketpack_landed_s {
-    pub userid: i32,
-}
-
-
-pub struct rocketpack_launch_s {
+pub struct rocket_jump {
     pub userid: i32,
     pub playsound: bool,
 }
 
 
-pub struct rps_taunt_event_s {
+pub struct rocketpack_landed {
+    pub userid: i32,
+}
+
+
+pub struct rocketpack_launch {
+    pub userid: i32,
+    pub playsound: bool,
+}
+
+
+pub struct rps_taunt_event {
     pub winner: i32,
     pub winner_rps: i32,
     pub loser: i32,
@@ -1216,13 +1216,13 @@ pub struct rps_taunt_event_s {
 }
 
 
-pub struct scout_grand_slam_s {
+pub struct scout_grand_slam {
     pub scout_id: i32,
     pub target_id: i32,
 }
 
 
-pub struct scout_slamdoll_landed_s {
+pub struct scout_slamdoll_landed {
     pub target_index: i32,
     pub x: f32,
     pub y: f32,
@@ -1230,12 +1230,12 @@ pub struct scout_slamdoll_landed_s {
 }
 
 
-pub struct sentry_on_go_active_s {
+pub struct sentry_on_go_active {
     pub index: i32,
 }
 
 
-pub struct show_annotation_s {
+pub struct show_annotation {
     pub worldPosX: f32,
     pub worldPosY: f32,
     pub worldPosZ: f32,
@@ -1253,61 +1253,61 @@ pub struct show_annotation_s {
 }
 
 
-pub struct show_class_layout_s {
+pub struct show_class_layout {
     pub show: bool,
 }
 
 
-pub struct show_freezepanel_s {
+pub struct show_freezepanel {
     pub killer: i32,
 }
 
 
-pub struct show_vs_panel_s {
+pub struct show_vs_panel {
     pub show: bool,
 }
 
 
-pub struct special_score_s {
+pub struct special_score {
     pub player: i32,
 }
 
 
-pub struct sticky_jump_landed_s {
+pub struct sticky_jump_landed {
     pub userid: i32,
 }
 
 
-pub struct sticky_jump_s {
+pub struct sticky_jump {
     pub userid: i32,
     pub playsound: bool,
 }
 
 
-pub struct tagged_player_as_it_s {
+pub struct tagged_player_as_it {
     pub player: i32,
 }
 
 
-pub struct team_leader_killed_s {
+pub struct team_leader_killed {
     pub killer: i32,
     pub victim: i32,
 }
 
 
-pub struct teamplay_alert_s {
+pub struct teamplay_alert {
     pub alert_type: i32,
 }
 
 
-pub struct teamplay_broadcast_audio_s {
+pub struct teamplay_broadcast_audio {
     pub team: i32,
     pub sound: String,
     pub additional_flags: i32,
 }
 
 
-pub struct teamplay_capture_blocked_s {
+pub struct teamplay_capture_blocked {
     pub cp: i32,
     pub cpname: String,
     pub blocker: i32,
@@ -1315,14 +1315,14 @@ pub struct teamplay_capture_blocked_s {
 }
 
 
-pub struct teamplay_capture_broken_s {
+pub struct teamplay_capture_broken {
     pub cp: i32,
     pub cpname: String,
     pub time_remaining	: f32,
 }
 
 
-pub struct teamplay_flag_event_s {
+pub struct teamplay_flag_event {
     pub player: i32,
     pub carrier: i32,
     pub eventtype: i32,
@@ -1331,17 +1331,17 @@ pub struct teamplay_flag_event_s {
 }
 
 
-pub struct teamplay_game_over_s {
+pub struct teamplay_game_over {
     pub reason: String,
 }
 
 
-pub struct teamplay_map_time_remaining_s {
+pub struct teamplay_map_time_remaining {
     pub seconds: i32,
 }
 
 
-pub struct teamplay_poi32_captured_s {
+pub struct teamplay_poi32_captured {
     pub cp: i32,
     pub cpname: String,
     pub team: i32,
@@ -1349,14 +1349,14 @@ pub struct teamplay_poi32_captured_s {
 }
 
 
-pub struct teamplay_poi32_locked_s {
+pub struct teamplay_poi32_locked {
     pub cp: i32,
     pub cpname: String,
     pub team: i32,
 }
 
 
-pub struct teamplay_poi32_startcapture_s {
+pub struct teamplay_poi32_startcapture {
     pub cp: i32,
     pub cpname: String,
     pub team: i32,
@@ -1366,39 +1366,39 @@ pub struct teamplay_poi32_startcapture_s {
 }
 
 
-pub struct teamplay_poi32_unlocked_s {
+pub struct teamplay_poi32_unlocked {
     pub cp: i32,
     pub cpname: String,
     pub 	team: i32,
 }
 
 
-pub struct teamplay_pre_round_time_left_s {
+pub struct teamplay_pre_round_time_left {
     pub time: i32,
 }
 
 
-pub struct teamplay_round_restart_seconds_s {
+pub struct teamplay_round_restart_seconds {
     pub seconds: i32,
 }
 
 
-pub struct teamplay_round_selected_s {
+pub struct teamplay_round_selected {
     pub round: String,
 }
 
 
-pub struct teamplay_round_stalemate_s {
+pub struct teamplay_round_stalemate {
     pub reason: String,
 }
 
 
-pub struct teamplay_round_start_s {
+pub struct teamplay_round_start {
     pub full_reset: bool,
 }
 
 
-pub struct teamplay_round_win_s {
+pub struct teamplay_round_win {
     pub team: i32,
     pub winreason: i32,
     pub flagcaplimit: i32,
@@ -1409,29 +1409,29 @@ pub struct teamplay_round_win_s {
 }
 
 
-pub struct teamplay_team_ready_s {
+pub struct teamplay_team_ready {
     pub team: i32,
 }
 
 
-pub struct teamplay_teambalanced_player_s {
+pub struct teamplay_teambalanced_player {
     pub player: i32,
     pub team: i32,
 }
 
 
-pub struct teamplay_timer_flash_s {
+pub struct teamplay_timer_flash {
     pub time_remaining: i32,
 }
 
 
-pub struct teamplay_timer_time_added_s {
+pub struct teamplay_timer_time_added {
     pub timer: i32,
     pub seconds_added: i32,
 }
 
 
-pub struct teamplay_win_panel_s {
+pub struct teamplay_win_panel {
     pub panel_style: String,
     pub winning_team: i32,
     pub winreason: String,
@@ -1455,17 +1455,17 @@ pub struct teamplay_win_panel_s {
 }
 
 
-pub struct tf_game_over_s {
+pub struct tf_game_over {
     pub reason: String,
 }
 
 
-pub struct tf_map_time_remaining_s {
+pub struct tf_map_time_remaining {
     pub seconds: i32,
 }
 
 
-pub struct tournament_stateupdate_s {
+pub struct tournament_stateupdate {
     pub userid: i32,
     pub namechange: bool,
     pub readystate: i32,
@@ -1473,19 +1473,19 @@ pub struct tournament_stateupdate_s {
 }
 
 
-pub struct training_complete_s {
+pub struct training_complete {
     pub next_map: String,
     pub map: String,
     pub text: String,
 }
 
 
-pub struct update_status_item_s {
+pub struct update_status_item {
     pub index: i32,
     pub object: i32,
 }
 
 
-pub struct upgrades_file_changed_s {
+pub struct upgrades_file_changed {
     pub path: String,
 }
