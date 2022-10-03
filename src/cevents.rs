@@ -156,7 +156,7 @@ pub struct controlpoint_pulse_element {
 }
 
 #[repr(C)]
-pub struct controlpointtarttouch {
+pub struct controlpoint_starttouch {
     pub player: c_short,
     pub area: c_short,
 }
@@ -230,6 +230,12 @@ pub struct damage_prevented {
 #[repr(C)]
 pub struct damage_resisted {
     pub entindex: c_short,
+}
+
+#[repr(C)]
+pub struct deadringer_cheat_death {
+    pub spy: c_short,
+    pub attacker: c_short,
 }
 
 #[repr(C)]
