@@ -124,7 +124,7 @@ pub struct cl_drawline {
 }
 
 #[repr(C)]
-pub struct competitivetats_update {
+pub struct competitive_stats_update {
     pub index: c_short,
     pub kills_rank: c_short,
     pub score_rank: c_short,
