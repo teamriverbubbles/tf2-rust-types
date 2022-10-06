@@ -31,15 +31,15 @@ pub struct arena_player_notification {
 
 #[repr(C)]
 pub struct arena_win_panel {
-    pub paneltyle: c_short,
+    pub panel_style: c_short,
     pub winning_team: c_short,
     pub winreason: c_char,
     pub cappers: c_char,
     pub flagcaplimit: c_short,
-    pub bluecore: c_short,
-    pub redcore: c_short,
-    pub bluecore_prev: c_short,
-    pub redcore_prev: c_short,
+    pub blue_score: c_short,
+    pub red_score: c_short,
+    pub blue_score_prev: c_short,
+    pub red_score_prev: c_short,
     pub round_complete: c_short,
     pub player_1: c_short,
     pub player_1_damage: c_short,
@@ -142,6 +142,12 @@ pub struct conga_kill {
 pub struct controlpoint_endtouch {
     pub player: c_short,
     pub area: c_short,
+}
+
+#[repr(C)]
+pub struct controlpoint_fake_capture {
+    pub player: c_short,
+    pub int_data: c_short,
 }
 
 #[repr(C)]
@@ -465,6 +471,12 @@ pub struct medic_death {
     pub attacker: c_short,
     pub healing: c_short,
     pub charged: bool,
+}
+
+#[repr(C)]
+pub struct medic_defended {
+    pub userid: c_short,
+    pub medic: c_short,
 }
 
 #[repr(C)]
